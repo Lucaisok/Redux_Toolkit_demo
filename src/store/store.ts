@@ -1,11 +1,13 @@
 import type { Action, ThunkAction } from '@reduxjs/toolkit';
 import { configureStore } from '@reduxjs/toolkit';
 import usersReducer from '../features/users/usersSlice';
+import booksReducer from '../features/books/booksSlice';
 import { useDispatch } from 'react-redux';
 
 export const store = configureStore({
     reducer: {
         users: usersReducer,
+        books: booksReducer,
     }
 });
 

@@ -7,11 +7,12 @@ export const fetchUsers = createAsyncThunk(
         try {
             const response = await fetch('https://reqres.in/api/users', {
                 headers: {
-                    "x-api-key": process.env.PUBLIC_API_KEY,
+                    "x-api-key": 'reqres-free-v1',
                 }
             }
             );
             const data = await response.json();
+            console.log('data', data);
             return data.data as User[];
 
         } catch (error) {

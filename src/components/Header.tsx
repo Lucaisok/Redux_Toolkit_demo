@@ -1,5 +1,5 @@
 import { Pressable, Text, View, StyleSheet } from "react-native";
-import { ActiveTab } from "./Home";
+import { ActiveTab } from "../screens/Home";
 import { FC } from "react";
 
 interface HeaderProps {
